@@ -6,11 +6,13 @@
 
   - Following all the steps in https://code.visualstudio.com/docs/cpp/config-mingw
 
-  - To run build/link/compile C/C++ code without depending on the VSC environment, but use the Terminal, open the `command prompt` in VSC, then follow the instructions from **Reference - learning C material** (see below). If there is any troubles, see the section **trouble shooting**. 
+  - To run build/link/compile C/C++ code without depending on the VSC environment, but use the Terminal, open the `command prompt` in VSC, then follow the instructions from **Reference - learning C material** (see below). If there is any troubles, see the section **trouble shooting**. For build/link/compile C code, use `gcc -Wall -Wextra foo.c`; build/link/compile C++ code, use `g++ -Wall -Wextra foo.cpp` 
+
+  - how to fix when an include path (but the included library is already installed and linked probably) is not detected in VSC: https://code.visualstudio.com/docs/cpp/cpp-ide 
 
 - Trouble shooting
 
-  1. `gcc` command can not be run from `cmd` (command prompt of windows). The error is
+ 1. `gcc` command can not be run from `cmd` (command prompt of windows). The error is
 
 ```
 Compiling eror: The procedure entry point clock_gettime64 could not be located in the dynamic link library C:\msys64\mingw64\bin..\lib\gcc\x86_w64-minggw32\15.1.0\cc1plus.exe
